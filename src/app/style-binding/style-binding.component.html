@@ -1,0 +1,8 @@
+<h1>Style binding starts here</h1>
+<!-- we use [style.color] to decide the css color dynamically.
+    if the component isValid, we return color = 'green', otherwise color = 'red'
+    PAY ATTENTION to the single quotes around 'green' and 'red' - this is JS Code!
+-->
+<div [style.color]="isValid ? 'green' : 'red'" (click)="toggleValid()">
+    Click to {{isValid ? 'invalidate' : 'validate'}}
+</div>
