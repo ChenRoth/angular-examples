@@ -1,0 +1,9 @@
+<h1>Custom events example starts here!</h1>
+<h2>this is the event receiver (parent)</h2>
+<div>(wait 3 seconds to see what this example does...)</div>
+<!-- we listen to the child onTimeout event.
+    when the onTimeout event is emitted, 
+    we'll print the event value (current date in milliseconds)
+-->
+<div *ngIf="eventTimestamp">the event emitter (child) emitted a value at {{eventTimestamp}}</div>
+<app-event-emitter (onTimeout)="updateTimestamp($event)"></app-event-emitter>
