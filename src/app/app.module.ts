@@ -6,6 +6,7 @@ import { EchoInputComponent } from './echo-input/echo-input.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
     declarations: [
@@ -13,7 +14,8 @@ import { NgClassExampleComponent } from './ng-class-example/ng-class-example.com
         EchoInputComponent,
         ClassBindingComponent,
         StyleBindingComponent,
-        NgClassExampleComponent
+        NgClassExampleComponent,
+        EventBindingComponent
     ],
     imports: [
         BrowserModule

@@ -1,0 +1,11 @@
+<h1>Event binding example starts here</h1>
+<button (click)="printSomethingHardCoded()">PRINT</button>
+<br />
+<!-- if we want to use the event argument in an event handler,
+     we MUST use $event (RESERVED NAME!!! don't change it)
+     $event is the same object as the one you'd get in a vanilla js event
+-->
+<button id="my-button" (click)="printClickTarget($event)">PRINT BUTTON TARGET</button>
+
+
+<span style="background-color: pink" id="pink-element" (mouseover)="printMouseOverTarget($event)">hover me!</span>
