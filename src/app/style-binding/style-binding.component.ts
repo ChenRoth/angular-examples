@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StyleBindingComponent implements OnInit {
     isValid: boolean = false;
+    validColor: string = 'lime';
+    invalidColor: string = 'salmon';
 
     toggleValid() {
         this.isValid = !this.isValid;

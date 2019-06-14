@@ -6,3 +6,8 @@
 <div [style.color]="isValid ? 'green' : 'red'" (click)="toggleValid()">
     Click to {{isValid ? 'invalidate' : 'validate'}}
 </div>
+
+<!-- in this example, we return variables (not hardcoded strings!) to style.backgroundColor -->
+<div [style.backgroundColor]="isValid ? validColor : invalidColor" (click)="toggleValid()">
+    Click to {{isValid ? 'invalidate' : 'validate'}}
+</div>
