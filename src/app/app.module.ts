@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { EchoInputComponent } from './echo-input/echo-input.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        EchoInputComponent
+        EchoInputComponent,
+        ClassBindingComponent
     ],
     imports: [
         BrowserModule
