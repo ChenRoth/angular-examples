@@ -1,3 +1,15 @@
 <h1>Echo input starts here</h1>
-<input #input (keyup)="0" />
-<div>{{input.value | uppercase }}</div>
+<!-- 
+    #input lets us have a local variable named "anInput" in the template ONLY!
+    this variable is actually the DOM object of the element,
+    similarly to executing "anInput = document.querySelector('input')" in console
+ -->
+
+<!-- 
+    we add a minimal (keyup) event emitter
+     so that angular would listen to the input 
+     and re-render the template
+-->
+<input #anInput (keyup)="0" />
+<!-- we use the uppercase pipe so the input is repeated in uppercase -->
+<div>{{anInput.value | uppercase }}</div>
