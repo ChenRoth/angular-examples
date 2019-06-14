@@ -1,0 +1,11 @@
+<h1>ngClass example starts here!</h1>
+<!-- the ngClass directive lets us control which css classes will be enabled
+    by using an expression that returns an object.
+    this object (e.g. "classes") contains the css class names as keys
+    and for each key, 
+    there's a boolean value to indicate if the css class should be enabled.
+    PLEASE NOTE that "classes" is an arbitrary variable name, you can use any name!
+-->
+<div [ngClass]="classes">
+    text abused by css classes: {{classes | json}} (refresh to see the changes)
+</div>

@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { EchoInputComponent } from './echo-input/echo-input.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         EchoInputComponent,
         ClassBindingComponent,
-        StyleBindingComponent
+        StyleBindingComponent,
+        NgClassExampleComponent
     ],
     imports: [
         BrowserModule
